@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="centigradz, Centigradz, CENTIGRADZ, music, Sri Lanka, Colombo">
+    <meta name="description"
+        content="Discover Centigradz, the renowned Sri Lankan band known for their unique blend of contemporary and traditional music.">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <title>Centigradz</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Splash Screen -->
+    <div class="splash-screen">
+        <img src="img/Centi Logo.png" class="logos">
+        <div class="splash-bar"></div>
+    </div>
+
+    <!-- ═══ NAV ═══ -->
+    <nav>
+        <a href="#" class="nav-logo"><img src="img/Centi Logo.png" alt="Centigradz" /></a>
+
+        <div class="nav-links">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="music.html">Music</a>
+            <a href="about.html">About</a>
+        </div>
+
+        <div class="nav-btn-wrap">
+            <a href="https://form.jotform.com/232563666599473" class="nav-btn">
+                <span>Reservation</span>
+                <svg height="16" width="16" viewBox="0 0 24 24" fill="none">
+                    <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                        fill="currentColor" />
+                </svg>
+            </a>
+        </div>
+
+        <button class="nav-hamburger" id="nav-toggle" aria-label="Menu">
+            <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+        </button>
+
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="services.html">Services</a>
+            <a href="music.html">Music</a>
+            <a href="about.html">About</a>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <section id="home">
+        <div class="hero-noise"></div>
+        <div class="hero-year">1999</div>
+
+        <div class="hero-inner">
+
+            <!-- Mosaic -->
+            <div class="mosaic-wrap slide-left">
+                <div class="live-tag">Live Since 1999</div>
+                <div class="mosaic">
+                    <div class="mosaic-item m1"><img src="img/group 1.jpg" alt="Band" /></div>
+                    <div class="mosaic-item m2"><img src="img/thusith.jpeg" alt="Thusith" /></div>
+                    <div class="mosaic-item m3"><img src="img/group.jpg" alt="Group" /></div>
+                    <div class="mosaic-item m4"><img src="img/abc.jpg" alt="Performance" /></div>
+                    <div class="mosaic-item m5"><img src="img/group.jpg" alt="Band" /></div>
+                    <div class="mosaic-item m6"><img src="img/group.jpg" alt="Live" /></div>
+                    <div class="mosaic-item m7"><img src="img/amila_ishan.jpg" alt="Members" /></div>
+                    <div class="mosaic-item m8"><img src="img/ishan_banner.jpg" alt="Ishan" /></div>
+                    <div class="mosaic-item m9"><img src="img/group6.jpg" alt="Centigradz" /></div>
+                </div>
+            </div>
+
+            <!-- Content -->
+            <div class="hero-content">
+
+                <div class="hero-eyebrow fade-up d1">
+                    <span class="eyebrow-line"></span>
+                    <span class="eyebrow-text">Sri Lanka's Legendary Band</span>
+                </div>
+
+                <div class="hero-logo fade-up d2">
+                    <a href="#"><img src="img/Centi Logo.png" alt="Centigradz Logo" /></a>
+                </div>
+
+                <div class="hero-divider fade-up d2"></div>
+
+                <p class="hero-desc fade-up d3">
+                    Discover the essence of <strong>Sri Lankan music</strong>.<br />
+                    We blend pop, rock, and tradition to create unforgettable melodies —
+                    an endless journey of sound and soul.
+                </p>
+
+                <div class="fade-up d4">
+                    <p class="follow-label">Follow Us On</p>
+                    <div class="social-row" style="margin-top: 12px;">
+                        <a href="https://www.instagram.com/centigradz1" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@centigradz1" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@CENTIGRADZlive" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.facebook.com/centigradzlive" target="_blank" rel="noopener noreferrer"
+                            class="social-link" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fade-up d5">
+                    <p class="follow-label" style="margin-bottom: 12px;">Listen On</p>
+                    <div class="stream-row">
+                        <a href="https://open.spotify.com/artist/28zBYEZiaeaXnTOhAHy1QQ" target="_blank"
+                            rel="noopener noreferrer" class="stream-pill">
+                            <img src="img/Spotify_Full_Logo_RGB_White.png" alt="Spotify" />
+                        </a>
+                        <a href="https://music.apple.com/us/artist/centigradz/261299810" target="_blank"
+                            rel="noopener noreferrer" class="stream-pill">
+                            <img src="img/apple music.svg" alt="Apple Music" />
+                        </a>
+                        <a href="https://www.deezer.com/en/artist/379936" target="_blank" rel="noopener noreferrer"
+                            class="stream-pill">
+                            <img src="img/Deezer-Logo-2019.png" alt="Deezer" />
+                        </a>
+                    </div>
+                </div>
+
+                <div class="fade-up d6">
+                    <a href="https://form.jotform.com/232563666599473" class="hero-cta">
+                        <span>Book a Reservation</span>
+                        <svg height="16" width="16" viewBox="0 0 24 24" fill="none">
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">Scroll</span>
+        </div>
+    </section>
+
+    <!-- ═══ PARALLAX VIDEO ═══ -->
+    <section class="parallax">
+        <video autoplay muted loop playsinline>
+            <source src="img/Comp 1.mp4" type="video/mp4">
+        </video>
+        <div class="parallax-content reveal">
+            <div class="parallax-eyebrow">
+                <span class="parallax-line"></span>
+                <span class="parallax-label">Live Experience</span>
+                <span class="parallax-line"></span>
+            </div>
+            <h2 class="parallax-text">
+                Experience the vibrant rhythms<br />
+                and melodies of <em>Sri Lanka</em><br />
+                through live performance
+            </h2>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="about-section">
+        <div class="bg-noise"></div>
+        <div class="bg-line bg-line-1"></div>
+        <div class="bg-line bg-line-2"></div>
+        <div class="decade-stamp">25<span>YRS</span></div>
+
+        <div class="about-inner">
+            <div class="section-label reveal">
+                <span class="label-line"></span>
+                <span class="label-text">Our Story</span>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image-wrap reveal-left">
+                    <div class="image-frame">
+                        <img src="img/group 1.jpg" alt="Centigradz Band" class="about-img" />
+                        <div class="image-overlay"></div>
+                        <div class="image-border-accent"></div>
+                    </div>
+                    <div class="floating-tag">Est. <strong>1999</strong></div>
+                </div>
+
+                <div class="about-content reveal">
+                    <h2 class="about-heading">
+                        <span class="heading-sub">About</span>
+                        <span class="heading-main">Centigradz</span>
+                    </h2>
+                    <div class="divider-red"></div>
+                    <p class="about-body">
+                        Sri Lanka's legendary band, making music for over <em>25 years</em>.
+                        It all began with a group of college students who simply loved music —
+                        creating engaging songs that have resonated across the country and beyond.
+                    </p>
+                    <a href="about.html" class="read-more-btn">
+                        <span class="btn-text">Read More</span>
+                        <span class="btn-arrow">→</span>
+                        <span class="btn-underline"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ BAND MEMBERS ═══ -->
+    <section class="members-section">
+        <div class="members-watermark">BAND</div>
+        <div class="members-inner">
+            <div class="section-label reveal">
+                <span class="label-line"></span>
+                <span class="label-text">The Artists</span>
+            </div>
+
+            <div class="members-header reveal">
+                <h2 class="about-heading">
+                    <span class="heading-sub">Our</span>
+                    <span class="heading-main">Team</span>
+                </h2>
+                <p class="members-desc">
+                    Meet the talented members who bring our music to life, each contributing their unique flair
+                    and passion to our electrifying performances. From uniquely amazing vocals to soulful rhythms,
+                    our band creates an unforgettable musical experience.
+                </p>
+            </div>
+
+            <div class="members-grid">
+                <div class="member-card reveal" style="transition-delay: 0.1s">
+                    <div class="member-img-wrap">
+                        <img src="img/amila.jpg" alt="Amila Niroshan" />
+                        <div class="member-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Amila Niroshan</div>
+                        <div class="member-role">Rapper</div>
+                    </div>
+                </div>
+
+                <div class="member-card reveal" style="transition-delay: 0.2s">
+                    <div class="member-img-wrap">
+                        <img src="img/thusith.jpeg" alt="Thusith Niroshana" />
+                        <div class="member-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Thusith Niroshana</div>
+                        <div class="member-role">Music Producer</div>
+                    </div>
+                </div>
+
+                <div class="member-card reveal" style="transition-delay: 0.3s">
+                    <div class="member-img-wrap">
+                        <img src="img/ishan_banner.jpg" alt="Ishan Lantra" />
+                        <div class="member-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Ishan Lantra</div>
+                        <div class="member-role">Singer</div>
+                    </div>
+                </div>
+
+                <div class="member-card reveal" style="transition-delay: 0.4s">
+                    <div class="member-img-wrap">
+                        <img src="img/Eranga.jpg" alt="Eranga UG" />
+                        <div class="member-overlay"></div>
+                    </div>
+                    <div class="member-info">
+                        <div class="member-name">Eranga UG</div>
+                        <div class="member-role">Singer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ UPDATES ═══ -->
+    <section class="updates-section">
+        <div class="updates-inner">
+            <div class="section-label reveal">
+                <span class="label-line"></span>
+                <span class="label-text">Stay Connected</span>
+            </div>
+
+            <div class="reveal">
+                <h2 class="about-heading">
+                    <span class="heading-sub">Latest</span>
+                    <span class="heading-main">Updates</span>
+                </h2>
+            </div>
+
+            <div class="updates-grid">
+                <div class="update-card reveal" style="transition-delay: 0.1s">
+                    <div class="update-card-label">
+                        <span class="label-line"></span>
+                        <span>YouTube</span>
+                    </div>
+                    <iframe height="300" src="https://www.youtube.com/embed/1Cbohsb8cp0?si=qIMI-Vzrit6wpcty"
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+
+                <div class="update-card reveal" style="transition-delay: 0.2s">
+                    <div class="update-card-label">
+                        <span class="label-line"></span>
+                        <span>Facebook</span>
+                    </div>
+                    <div class="fb-page" data-href="https://www.facebook.com/centigradzlive" data-tabs="timeline"
+                        data-width="" data-height="400" data-small-header="false" data-adapt-container-width="true"
+                        data-hide-cover="false" data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/centigradzlive" class="fb-xfbml-parse-ignore">
+                            <a href="https://www.facebook.com/centigradzlive">Centigradz</a>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer>
+        <div class="footer-inner">
+            <a href="#" class="footer-logo"><img src="img/Centi Logo.png" alt="Centigradz" /></a>
+            <div class="footer-divider"></div>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/centigradzlive" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/centigradz1" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://music.apple.com/us/artist/centigradz/261299810" target="_blank"
+                    rel="noopener noreferrer" class="footer-social-link" aria-label="Apple Music"><i
+                        class="fab fa-apple"></i></a>
+                <a href="https://open.spotify.com/artist/28zBYEZiaeaXnTOhAHy1QQ" target="_blank"
+                    rel="noopener noreferrer" class="footer-social-link" aria-label="Spotify"><i
+                        class="fab fa-spotify"></i></a>
+                <a href="https://www.youtube.com/@CENTIGRADZlive" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.tiktok.com/@centigradz1" target="_blank" rel="noopener noreferrer"
+                    class="footer-social-link" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2024 Centigradz — All rights reserved</p>
+        </div>
+    </footer>
+
+    <!-- ═══ SCRIPTS ═══ -->
+    <script>
+        // Custom cursor
+        const cursor = document.getElementById('cursor');
+        const cursorRing = document.getElementById('cursorRing');
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            setTimeout(() => {
+                cursorRing.style.left = e.clientX + 'px';
+                cursorRing.style.top = e.clientY + 'px';
+            }, 60);
+        });
+
+        // Mobile nav toggle
+        document.getElementById('nav-toggle').addEventListener('click', function () {
+            const nav = document.getElementById('mobile-nav');
+            nav.style.display = nav.style.display === 'block' ? 'none' : 'block';
+        });
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal, .reveal-left');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    revealObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(el => revealObserver.observe(el));
+
+        // Facebook SDK
+        window.fbAsyncInit = function () {
+            FB.init({ xfbml: true, version: 'v18.0' });
+        };
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v18.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+</body>
+
+</html>
