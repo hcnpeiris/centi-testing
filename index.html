@@ -37,12 +37,13 @@
             <a href="index.html" class="active">Home</a>
             <a href="services.html">Services</a>
             <a href="music.html">Music</a>
+            <a href="rusiri.html">Rusiri</a>
             <a href="about.html">About</a>
         </div>
 
         <div class="nav-btn-wrap">
             <a href="https://form.jotform.com/232563666599473" class="nav-btn">
-                <span>Reservation</span>
+                <span>Book Now</span>
                 <svg height="16" width="16" viewBox="0 0 24 24" fill="none">
                     <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
                         fill="currentColor" />
@@ -60,6 +61,7 @@
             <a href="index.html" class="active">Home</a>
             <a href="services.html">Services</a>
             <a href="music.html">Music</a>
+            <a href="rusiri.html">Rusiri</a>
             <a href="about.html">About</a>
         </div>
     </nav>
@@ -72,7 +74,18 @@
             <!-- Mosaic -->
             <div class="mosaic-wrap slide-left">
                 <div class="mosaic">
-                    <div class="mosaic-item m1"><img src="img/gallery.png" alt="Band" /></div>
+                    <div class="mosaic-item m1">
+                        <div class="hero-carousel" id="hero-carousel">
+                            <img src="img/carousel/slide-1.jpg" alt="Centigradz live" class="carousel-slide active" />
+                            <img src="img/carousel/slide-2.jpg" alt="Centigradz live" class="carousel-slide" />
+                            <img src="img/carousel/slide-3.jpg" alt="Centigradz live" class="carousel-slide" />
+                            <img src="img/carousel/slide-4.jpg" alt="Centigradz live" class="carousel-slide" />
+                            <img src="img/carousel/slide-5.jpg" alt="Centigradz live" class="carousel-slide" />
+                            <img src="img/carousel/slide-6.jpg" alt="Centigradz live" class="carousel-slide" />
+                            <img src="img/carousel/slide-7.jpg" alt="Centigradz live" class="carousel-slide" />
+                            <img src="img/carousel/slide-8.jpg" alt="Centigradz live" class="carousel-slide" />
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -107,10 +120,6 @@
                             class="social-link" aria-label="TikTok">
                             <i class="fab fa-tiktok"></i>
                         </a>
-                        <a href="https://www.youtube.com/@CENTIGRADZlive" target="_blank" rel="noopener noreferrer"
-                            class="social-link" aria-label="YouTube">
-                            <i class="fab fa-youtube"></i>
-                        </a>
                         <a href="https://www.facebook.com/centigradzlive" target="_blank" rel="noopener noreferrer"
                             class="social-link" aria-label="Facebook">
                             <i class="fab fa-facebook-f"></i>
@@ -137,13 +146,20 @@
                 </div>
 
                 <div class="fade-up d6">
-                    <a href="https://form.jotform.com/232563666599473" class="hero-cta">
-                        <span>Book a Reservation</span>
-                        <svg height="16" width="16" viewBox="0 0 24 24" fill="none">
-                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                                fill="currentColor" />
-                        </svg>
-                    </a>
+                    <div class="hero-cta-row">
+                        <a href="https://form.jotform.com/232563666599473" class="hero-cta">
+                            <span>Book Now</span>
+                            <svg height="16" width="16" viewBox="0 0 24 24" fill="none">
+                                <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor" />
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@CENTIGRADZlive" target="_blank" rel="noopener noreferrer"
+                            class="hero-yt" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                            <span>YouTube</span>
+                        </a>
+                    </div>
                 </div>
 
             </div>
@@ -387,6 +403,18 @@
             });
         }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
         reveals.forEach(el => revealObserver.observe(el));
+
+        // Hero carousel auto-advance
+        (function () {
+            const slides = document.querySelectorAll('#hero-carousel .carousel-slide');
+            if (slides.length < 2) return;
+            let i = 0;
+            setInterval(() => {
+                slides[i].classList.remove('active');
+                i = (i + 1) % slides.length;
+                slides[i].classList.add('active');
+            }, 4000);
+        })();
 
         // Facebook SDK
         window.fbAsyncInit = function () {
