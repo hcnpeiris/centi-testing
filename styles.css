@@ -502,7 +502,7 @@
 
   .eyebrow-line {
     display: block;
-    width: 40px;
+    width: 24px;
     height: 1px;
     background: var(--red);
   }
@@ -651,6 +651,14 @@
 
   .hero-cta:hover svg {
     transform: translateX(4px);
+  }
+
+  .hero-cta--filled {
+    background: var(--red);
+  }
+
+  .hero-cta--filled::before {
+    background: #b50f0f;
   }
 
   /* Hero CTA row (Book Now + YouTube) */
@@ -831,7 +839,7 @@
 
   .parallax-line {
     display: block;
-    width: 40px;
+    width: 24px;
     height: 1px;
     background: var(--red);
   }
@@ -934,7 +942,7 @@
 
   .label-line {
     display: block;
-    width: 48px;
+    width: 24px;
     height: 1px;
     background: var(--red);
   }
@@ -1037,6 +1045,7 @@
     letter-spacing: 5px;
     text-transform: uppercase;
     color: var(--text-dim);
+    padding-bottom: 16px;
   }
 
   .heading-main {
@@ -1088,7 +1097,7 @@
     width: 100%;
     height: 1px;
     background: var(--red);
-    transform: scaleX(0.3);
+    transform: scaleX(1);
     transform-origin: left;
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -2738,6 +2747,10 @@
     border: 1px solid rgba(255, 255, 255, 0.04);
   }
 
+  .awards-grid .award-card:last-child:nth-child(3n+1) {
+    grid-column: 2 / 3;
+  }
+
   .award-card {
     position: relative;
     padding: 36px 32px;
@@ -2806,6 +2819,10 @@
   @media (max-width: 1024px) {
     .awards-grid {
       grid-template-columns: repeat(2, 1fr);
+    }
+
+    .awards-grid .award-card:last-child:nth-child(3n+1) {
+      grid-column: auto;
     }
   }
 
