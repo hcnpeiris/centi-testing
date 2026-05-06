@@ -1336,6 +1336,7 @@
 
   .update-card iframe {
     width: 100%;
+    height: 300px;
     display: block;
     border: none;
     filter: grayscale(10%);
@@ -1575,6 +1576,24 @@
 
     .updates-grid {
       grid-template-columns: 1fr;
+    }
+
+    .update-card {
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    .update-card iframe {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      height: auto;
+    }
+
+    .update-card .fb-page,
+    .update-card .fb-page span,
+    .update-card .fb-page span iframe {
+      width: 100% !important;
+      max-width: 100% !important;
     }
 
     .hero-year {
