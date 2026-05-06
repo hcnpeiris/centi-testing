@@ -613,7 +613,7 @@
     font-weight: 400;
     letter-spacing: 4px;
     text-transform: uppercase;
-    padding: 14px 28px;
+    padding: 14px 22px 14px 28px;
     cursor: none;
     text-decoration: none;
     position: relative;
@@ -673,8 +673,8 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: #ff0000;
-    border: 1px solid #ff0000;
+    background: transparent;
+    border: 1px solid var(--red);
     color: #fff;
     font-family: 'DM Sans', sans-serif;
     font-size: 10px;
@@ -1510,6 +1510,10 @@
   }
 
   @media (max-width: 768px) {
+    .scroll-indicator {
+      display: none;
+    }
+
     nav {
       padding: 0 24px;
     }
@@ -1585,6 +1589,17 @@
   @media (max-width: 480px) {
     .members-grid {
       grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-cta-row {
+      flex-wrap: nowrap;
+    }
+
+    .hero-cta,
+    .hero-yt {
+      padding: 12px 14px;
+      letter-spacing: 2px;
+      font-size: 9px;
     }
   }
 
